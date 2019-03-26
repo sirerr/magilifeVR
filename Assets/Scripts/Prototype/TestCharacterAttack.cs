@@ -7,7 +7,7 @@ public class TestCharacterAttack : MonoBehaviour
     public GameObject attack;
     public Transform CreatePoint;
     public float Speed = 10f;
-
+    bool life;
 
     public void DoAttack()
     {

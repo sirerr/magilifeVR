@@ -370,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestChar
       objectReference: {fileID: 0}
+    - target: {fileID: 1512056289, guid: 8c2dfa990d78f084483390e6b2235fbb, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1512056295, guid: 8c2dfa990d78f084483390e6b2235fbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14
@@ -634,6 +638,7 @@ GameObject:
   - component: {fileID: 1421193431}
   - component: {fileID: 1421193430}
   - component: {fileID: 1421193429}
+  - component: {fileID: 1421193432}
   m_Layer: 0
   m_Name: startplat
   m_TagString: Untagged
@@ -713,6 +718,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421193427}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1421193432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421193427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cceb0561d84268c459c3931bd19afee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhoCaptured: 0
+  TimeToCapture: 10
 --- !u!1 &1512056289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1512056289, guid: 8c2dfa990d78f084483390e6b2235fbb,
@@ -820,6 +839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 224494765374337537, guid: f918872c60d754a4d82cc1b3bd449853,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 892636236347790656, guid: f918872c60d754a4d82cc1b3bd449853,
         type: 3}

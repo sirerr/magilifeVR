@@ -7,7 +7,7 @@ public class TestCharacter : MonoBehaviour
     Rigidbody rbody;
     public float WalkSpeed =2f;
     public float JumpAmount = 2f;
-
+    public int PlayerNum = 1;
 
     float startRotx;
     float startRotz;
