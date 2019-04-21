@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.magilife.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Projects\\GameDev\\magilifeVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "magilife [Testing]"
+        }
+      }
+    }
+  ]
+}

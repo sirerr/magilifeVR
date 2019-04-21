@@ -1,42 +1,24 @@
 {
   "actions": [
     {
-      "name": "/actions/default/in/InteractUI",
+      "name": "/actions/magilife/in/Loc",
+      "type": "pose",
+      "requirement": "mandatory"
+    },
+    {
+      "name": "/actions/magilife/in/TouchPadLoc",
+      "type": "vector2"
+    },
+    {
+      "name": "/actions/magilife/in/TrigPull",
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/Teleport",
-      "type": "boolean"
+      "name": "/actions/magilife/in/TrigGrabValue",
+      "type": "vector2"
     },
     {
-      "name": "/actions/default/in/GrabPinch",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/GrabGrip",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/Pose",
-      "type": "pose"
-    },
-    {
-      "name": "/actions/default/in/SkeletonLeftHand",
-      "type": "skeleton",
-      "skeleton": "/skeleton/hand/left"
-    },
-    {
-      "name": "/actions/default/in/SkeletonRightHand",
-      "type": "skeleton",
-      "skeleton": "/skeleton/hand/right"
-    },
-    {
-      "name": "/actions/default/in/Squeeze",
-      "type": "vector1",
-      "requirement": "optional"
-    },
-    {
-      "name": "/actions/default/out/Haptic",
+      "name": "/actions/magilife/out/hapticOut",
       "type": "vibration"
     },
     {
@@ -66,8 +48,8 @@
   ],
   "action_sets": [
     {
-      "name": "/actions/default",
-      "usage": "single"
+      "name": "/actions/magilife",
+      "usage": "leftright"
     },
     {
       "name": "/actions/platformer",
@@ -99,18 +81,6 @@
   "localization": [
     {
       "language_tag": "en_US",
-      "/actions/default/in/InteractUI": "Interact With UI",
-      "/actions/default/in/Teleport": "Teleport",
-      "/actions/default/in/GrabPinch": "Grab Pinch",
-      "/actions/default/in/GrabGrip": "Grab Grip",
-      "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
-      "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",
-      "/actions/default/in/Pose": "Pose",
-      "/actions/default/out/Haptic": "Haptic",
-      "/actions/buggybuddy/in/Steering": "Steering",
-      "/actions/buggybuddy/in/Throttle": "Throttle",
-      "/actions/buggybuddy/in/Brake": "Brake",
-      "/actions/buggybuddy/in/Reset": "Reset",
       "/actions/platformer/in/Move": "Move",
       "/actions/platformer/in/Jump": "Jump"
     }

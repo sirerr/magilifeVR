@@ -67,31 +67,6 @@
     <Compile Include="Assets\Imports\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_Editor.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_Preferences.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_RenderModelEditor.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_Settings.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_SkyboxEditor.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_UnitySettingsWindow.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_Update.cs" />
-    <Compile Include="Assets\SteamVR\Editor\SteamVR_UpdateModeEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_CopyExampleInputFiles.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Boolean_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_GenericPropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_In_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Out_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Pose_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Single_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Skeleton_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Vector2_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Vector3_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Action_Vibration_PropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_ActionSetPropertyEditor.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_EditorWindow.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_Generator.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_LiveWindow.cs" />
-    <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_PostProcessBuild.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Projects/GameDev/magilifeVR/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -394,6 +369,26 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{A3B846F1-41C0-46C7-D89E-B72613BD2CA9}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{C17CF20C-FD39-5CC9-69AF-A8E29E0E8538}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{A566DC2A-7553-5761-A58D-54B8881E8C5F}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{F140C31D-6D55-35D9-7BE7-77E3FCE0E860}</Project>
+      <Name>SteamVR_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{03D000AF-CAB0-B1BA-954F-E2954BEDDA94}</Project>
+      <Name>SteamVR</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{C5AC4C06-BC18-E6F8-C63A-FFAF5AA3BC78}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

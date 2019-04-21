@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/prototype0.unity
+- path: Assets/Scenes/prototypeVR0.unity
   isLoaded: 1
   isActive: 1
