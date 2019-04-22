@@ -1,0 +1,6 @@
+Flight settings:
+
+Project Gravity -2
+Force Mult 60
+Torque Mult 3
+PlayArea Mass 1
