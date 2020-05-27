@@ -170,6 +170,7 @@
     <Compile Include="Assets\Scripts\MovementControls\SwimPower.cs" />
     <Compile Include="Assets\Scripts\MovementControls\ThrustMove.cs" />
     <Compile Include="Assets\Scripts\MovementControls\tentirotation.cs" />
+    <Compile Include="Assets\Scripts\Painting\WorldPainter.cs" />
     <Compile Include="Assets\Scripts\Prototype\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Prototype\PlatformCapture.cs" />
     <Compile Include="Assets\Scripts\Prototype\TestCharacter.cs" />
@@ -179,6 +180,7 @@
     <None Include="Assets\Imports\Standard Assets\Effects\Projectors\Shaders\ProjectorMultiply.shader" />
     <None Include="Assets\Prefabs\FlightCurrentSettings.txt" />
     <None Include="Assets\Imports\Standard Assets\Effects\Projectors\Guidelines.txt" />
+    <None Include="Assets\MadeInUnity\Holigram.shader" />
     <None Include="Assets\Imports\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Imports\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
     <None Include="Assets\Imports\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
