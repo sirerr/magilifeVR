@@ -7,22 +7,20 @@ using Valve.VR;
 
 public class FlyingMotionPerHand : MonoBehaviour
 {
-
+    
   public  float forceMult = 1;
   public float torqueMult = 1;
 
     public Transform centerOfMass;
     public Rigidbody playArea;
-
-    public SteamVR_Action_Single CurrentTriggerValue;
-    public Hand thisHand;
+    
     public SteamVR_Behaviour_Pose handPose;
 
     // From Old System
     public bool secondInputPressed = false;
 
     public FlyingMotionPerHand partnerPaddle;
-
+   
     [HideInInspector]
     public bool isSwimming = false;
     [HideInInspector]
@@ -94,25 +92,13 @@ public class FlyingMotionPerHand : MonoBehaviour
     {
         if (handPose == null)
             handPose = GetComponent<SteamVR_Behaviour_Pose>();
-
-        //    if (thisHand == null)
-        //        thisHand = this.GetComponent<Hand>();
-
-        //    CurrentTriggerValue.AddOnChangeListener(FlightChosing, thisHand.handType);
-        //
+    
+ 
     }
 
     private void OnDisable()
-    {
-        //if (CurrentTriggerValue != null)
-        //    CurrentTriggerValue.RemoveOnChangeListener(FlightChosing, thisHand.handType);
+    { 
     }
 
-    //public void FlightChosing(ISteamVR_Action_Single action_In, SteamVR_Input_Sources inputsource, float newvalue, float newdelta )
-    //{
-    //    if(CurrentTriggerValue.GetChanged(thisHand.handType))
-    //    {
-
-    //    }
-    //}
+ 
 }

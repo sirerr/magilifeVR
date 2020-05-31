@@ -18,6 +18,10 @@
       "type": "vector2"
     },
     {
+      "name": "/actions/magilife/in/GripPull",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/magilife/out/hapticOut",
       "type": "vibration"
     },
@@ -49,7 +53,7 @@
   "action_sets": [
     {
       "name": "/actions/magilife",
-      "usage": "leftright"
+      "usage": "single"
     },
     {
       "name": "/actions/platformer",
