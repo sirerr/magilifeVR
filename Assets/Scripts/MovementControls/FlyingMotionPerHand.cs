@@ -92,8 +92,6 @@ public class FlyingMotionPerHand : MonoBehaviour
     {
         if (handPose == null)
             handPose = GetComponent<SteamVR_Behaviour_Pose>();
-    
- 
     }
 
     private void OnDisable()

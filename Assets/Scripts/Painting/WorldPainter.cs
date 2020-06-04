@@ -9,7 +9,7 @@ public class WorldPainter : MonoBehaviour
     public GameObject Floor;
     public Transform Emitter;
     int LayerMask = 1 << 9 | 1<<10;
-    bool Emit = false;
+   //bool Emit = false;
 
     public SteamVR_Behaviour_Pose handPose;
     // Start is called before the first frame update
@@ -25,11 +25,10 @@ public class WorldPainter : MonoBehaviour
     {
         SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("GripPull");
 
-        bool gripper = pulltriggeraction.GetState(handPose.inputSource);
+        bool GripperState = pulltriggeraction.GetState(handPose.inputSource);
 
-        print(gripper);
 
-        if (Emit)
+        if (GripperState)
         {
 
             RaycastHit hit;
@@ -43,7 +42,7 @@ public class WorldPainter : MonoBehaviour
                 {
                     Quaternion rot = Quaternion.LookRotation(hit.normal);
                     Vector3 spot = hit.point;
-                    spot.y += .1f;
+                    spot.y += .02f;
                     Instantiate(Floor, spot, Quaternion.Inverse(rot));
                 }
             }
