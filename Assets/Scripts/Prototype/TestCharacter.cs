@@ -61,8 +61,8 @@ public class TestCharacter : MonoBehaviour
         point = cam.ScreenToWorldPoint(new Vector3(screenpoint.x, screenpoint.y, cam.transform.forward.z * 50f));
         transform.LookAt(point, Vector3.up);
         Quaternion rot = transform.rotation;
-        rot = new Quaternion(startRotx, rot.y, startRotz, rot.w);
-        transform.rotation = rot;
+       // rot = new Quaternion(startRotx, rot.y, startRotz, rot.w);
+       // transform.rotation = rot;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {

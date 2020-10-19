@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 using Valve.VR;
+using OVR;
 
 
 public class FlyingMotionPerHand : MonoBehaviour
 {
-    
-  public  float forceMult = 1;
-  public float torqueMult = 1;
+ 
+    public enum HMDChoice { Oculus, Vive };
+    public HMDChoice CurrentHMD;
+
+    //the Vive parts
+    public SteamVR_Behaviour_Pose handPose;
+    bool trigstate = false;
+
+
+    public  float forceMult = 1;
+    public float torqueMult = 1;
 
     public Transform centerOfMass;
     public Rigidbody playArea;
     
-    public SteamVR_Behaviour_Pose handPose;
-
     // From Old System
     public bool secondInputPressed = false;
 
@@ -35,10 +42,26 @@ public class FlyingMotionPerHand : MonoBehaviour
 
     //
 
-    private void FixedUpdate()
+    public void Update()
     {
-        SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("TrigPull");
-        bool trigstate = pulltriggeraction.GetState(handPose.inputSource);
+        switch(CurrentHMD)
+        {
+            case HMDChoice.Oculus:
+
+                break;
+            case HMDChoice.Vive:
+                //vive part
+                SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("TrigPull");
+                trigstate = pulltriggeraction.GetState(handPose.inputSource);
+                break;
+
+        }
+
+
+    }
+
+    private void FixedUpdate()
+    {        
 
         if(trigstate)
         {
