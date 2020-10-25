@@ -13,9 +13,10 @@ public class FlyingMotionPerHand : MonoBehaviour
     public HMDChoice CurrentHMD;
 
     //the Vive parts
-    public SteamVR_Behaviour_Pose handPose;
-    bool trigstate = false;
-
+    SteamVR_Behaviour_Pose handPose;
+    bool TriggerCurrentState = false;
+    //oculus
+    public OVRInput.Controller controller;
 
     public  float forceMult = 1;
     public float torqueMult = 1;
@@ -47,23 +48,24 @@ public class FlyingMotionPerHand : MonoBehaviour
         switch(CurrentHMD)
         {
             case HMDChoice.Oculus:
+                TriggerCurrentState = OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, controller);
 
                 break;
             case HMDChoice.Vive:
                 //vive part
                 SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("TrigPull");
-                trigstate = pulltriggeraction.GetState(handPose.inputSource);
+                TriggerCurrentState = pulltriggeraction.GetState(handPose.inputSource);
                 break;
 
         }
 
-
+        print(TriggerCurrentState + " on " + controller.ToString());
     }
 
     private void FixedUpdate()
     {        
 
-        if(trigstate)
+        if(TriggerCurrentState)
         {
             isTriggered = true;
 
