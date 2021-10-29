@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Oculus/Platform/Samples/VrHoops/Readme.md.meta
 guid: a3c974875a2ea724e93b6e5114bca96f
 TextScriptImporter:
+=======
+guid: b883b40bd6d865e4bbdcb0a012b2f512
+NativeFormatImporter:
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/MadeInUnity/Unlit_Holigram.mat.meta
   externalObjects: {}
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

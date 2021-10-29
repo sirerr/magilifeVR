@@ -1,10 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png.meta
 guid: b40a1cb5f1124ec489cc1e7a533e46e6
 TextureImporter:
   fileIDToRecycleName:
     8900000: generatedCubemap
   externalObjects: {}
   serializedVersion: 4
+=======
+guid: acfa9ab589100024da7639a2da15c77c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 10
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/Imports/Textures/p3.png.meta
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -22,6 +30,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,7 +42,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: -1
     wrapV: -1
     wrapW: -1
@@ -48,7 +58,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 0
   textureShape: 2
@@ -56,7 +66,12 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
+<<<<<<< HEAD:Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png.meta
   - buildTarget: DefaultTexturePlatform
+=======
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/Imports/Textures/p3.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -66,7 +81,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD:Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png.meta
   - buildTarget: Standalone
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/Imports/Textures/p3.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -76,7 +97,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD:Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png.meta
   - buildTarget: Android
+=======
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/Imports/Textures/p3.png.meta
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -86,12 +113,26 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
     physicsShape: []
+<<<<<<< HEAD:Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png.meta
+=======
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/Imports/Textures/p3.png.meta
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

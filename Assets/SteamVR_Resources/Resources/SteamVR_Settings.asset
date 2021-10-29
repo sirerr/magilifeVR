@@ -14,12 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseGameWhenDashboardVisible: 1
   lockPhysicsUpdateRateToRenderFrequency: 1
+<<<<<<< HEAD:Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset
   trackingSpaceOrigin: 1
+=======
+  trackingSpace: 0
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/SteamVR/Resources/SteamVR_Settings.asset
   actionsFilePath: actions.json
   steamVRInputPath: SteamVR_Input
   inputUpdateMode: 2
   poseUpdateMode: 8
   activateFirstActionSetOnStart: 1
+<<<<<<< HEAD:Assets/SteamVR_Resources/Resources/SteamVR_Settings.asset
   editorAppKey: application.generated.unity.magi.exe
   autoEnableVR: 1
   legacyMixedRealityCamera: 1
@@ -30,3 +35,7 @@ MonoBehaviour:
   mixedRealityActionSetAutoEnable: 1
   previewHandLeft: {fileID: 0}
   previewHandRight: {fileID: 0}
+=======
+  editorAppKey: application.generated.unity.magilife.exe
+  autoEnableVR: 1
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e:Assets/SteamVR/Resources/SteamVR_Settings.asset

@@ -3,7 +3,11 @@
 --- !u!129 &1
 PlayerSettings:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   serializedVersion: 22
+=======
+  serializedVersion: 20
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   productGUID: 48d317a57f70b284b9cd308242c14d6f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
@@ -17,7 +21,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 1
+  m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -113,8 +117,11 @@ PlayerSettings:
   switchNVNShaderPoolsGranularity: 33554432
   switchNVNDefaultPoolsGranularity: 16777216
   switchNVNOtherPoolsGranularity: 16777216
+<<<<<<< HEAD
   switchNVNMaxPublicTextureIDCount: 0
   switchNVNMaxPublicSamplerIDCount: 0
+=======
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   stadiaPresentMode: 0
   stadiaTargetFramerate: 0
   vulkanNumSwapchainBuffers: 3
@@ -137,6 +144,34 @@ PlayerSettings:
   xboxOneDisableKinectGpuReservation: 0
   xboxOneEnable7thCore: 0
   vrSettings:
+<<<<<<< HEAD
+=======
+    cardboard:
+      depthFormat: 0
+      enableTransitionView: 0
+    daydream:
+      depthFormat: 0
+      useSustainedPerformanceMode: 0
+      enableVideoLayer: 0
+      useProtectedVideoMemory: 0
+      minimumSupportedHeadTracking: 0
+      maximumSupportedHeadTracking: 1
+    hololens:
+      depthFormat: 1
+      depthBufferSharingEnabled: 0
+    lumin:
+      depthFormat: 0
+      frameTiming: 2
+      enableGLCache: 0
+      glCacheMaxBlobSize: 524288
+      glCacheMaxFileSize: 8388608
+    oculus:
+      sharedDepthBuffer: 0
+      dashSupport: 0
+      lowOverheadMode: 0
+      protectedContext: 0
+      v2Signing: 1
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
     enable360StereoCapture: 0
   isWsaHolographicRemotingEnabled: 0
   enableFrameTimingStats: 0
@@ -156,7 +191,11 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
+<<<<<<< HEAD
   AndroidMinSdkVersion: 23
+=======
+  AndroidMinSdkVersion: 19
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
   aotOptions: 
@@ -171,10 +210,17 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
+<<<<<<< HEAD
   iOSTargetOSVersionString: 11.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 11.0
+=======
+  iOSTargetOSVersionString: 10.0
+  tvOSSdkVersion: 0
+  tvOSRequireExtendedGameController: 0
+  tvOSTargetOSVersionString: 10.0
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -255,9 +301,12 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
+<<<<<<< HEAD
   AndroidMinifyWithR8: 0
   AndroidMinifyRelease: 0
   AndroidMinifyDebug: 0
+=======
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
   m_BuildTargetIcons: []
@@ -377,30 +426,42 @@ PlayerSettings:
     m_GraphicsJobs: 0
   - m_BuildTarget: MetroSupport
     m_GraphicsJobs: 0
+<<<<<<< HEAD
   - m_BuildTarget: GameCoreScarlettSupport
     m_GraphicsJobs: 0
+=======
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   - m_BuildTarget: AppleTVSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: BJMSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: LinuxStandaloneSupport
     m_GraphicsJobs: 0
+<<<<<<< HEAD
   - m_BuildTarget: GameCoreXboxOneSupport
     m_GraphicsJobs: 0
+=======
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   - m_BuildTarget: PS4Player
     m_GraphicsJobs: 0
   - m_BuildTarget: iOSSupport
     m_GraphicsJobs: 0
+<<<<<<< HEAD
   - m_BuildTarget: PS5Player
     m_GraphicsJobs: 0
+=======
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   - m_BuildTarget: WindowsStandaloneSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: XboxOnePlayer
     m_GraphicsJobs: 0
   - m_BuildTarget: LuminSupport
     m_GraphicsJobs: 0
+<<<<<<< HEAD
   - m_BuildTarget: CloudRendering
     m_GraphicsJobs: 0
+=======
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   - m_BuildTarget: AndroidPlayer
     m_GraphicsJobs: 0
   - m_BuildTarget: WebGLSupport
@@ -684,7 +745,11 @@ PlayerSettings:
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
+<<<<<<< HEAD
   webGLDecompressionFallback: 0
+=======
+  webGLWasmStreaming: 0
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   scriptingDefineSymbols:
     1: CROSS_PLATFORM_INPUT
     4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
@@ -705,11 +770,17 @@ PlayerSettings:
   enableRoslynAnalyzers: 1
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
+<<<<<<< HEAD
   gcIncremental: 1
   assemblyVersionValidation: 1
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform:
     Android: 3
+=======
+  gcIncremental: 0
+  gcWBarrierValidation: 0
+  apiCompatibilityLevelPerPlatform: {}
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Template_3D
@@ -766,7 +837,14 @@ PlayerSettings:
   XboxOneXTitleMemory: 8
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
+<<<<<<< HEAD
   vrEditorSettings: {}
+=======
+  vrEditorSettings:
+    daydream:
+      daydreamIconForeground: {fileID: 0}
+      daydreamIconBackground: {fileID: 0}
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   cloudServicesEnabled:
     Analytics: 1
     Build: 0
@@ -788,8 +866,12 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
+<<<<<<< HEAD
   activeInputHandler: 0
   cloudProjectId: 49cf2ea5-cbc9-493f-b3ca-39d1e7bd6715
+=======
+  cloudProjectId: 
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: magi

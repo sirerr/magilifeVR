@@ -1,35 +1,57 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
 //using Valve.VR.InteractionSystem;
 //using Valve.VR;
 
 
+=======
+using Valve.VR.InteractionSystem;
+using Valve.VR;
+using OVR;
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
 
 
 public class FlyingMotionPerHand : MonoBehaviour
 {
+<<<<<<< HEAD
     
+=======
+ 
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
     public enum HMDChoice { Oculus, Vive };
     public HMDChoice CurrentHMD;
 
     //the Vive parts
+<<<<<<< HEAD
     //SteamVR_Behaviour_Pose handPose;
+=======
+    SteamVR_Behaviour_Pose handPose;
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
     bool TriggerCurrentState = false;
     //oculus
     public OVRInput.Controller controller;
 
+<<<<<<< HEAD
     public float forceMult = 1;
+=======
+    public  float forceMult = 1;
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
     public float torqueMult = 1;
 
     public Transform centerOfMass;
     public Rigidbody playArea;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
     // From Old System
     public bool secondInputPressed = false;
 
     public FlyingMotionPerHand partnerPaddle;
-
+   
     [HideInInspector]
     public bool isSwimming = false;
     [HideInInspector]
@@ -79,10 +101,34 @@ public class FlyingMotionPerHand : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
+    public void Update()
     {
+<<<<<<< HEAD
 
         if (TriggerCurrentState)
+=======
+        switch(CurrentHMD)
+        {
+            case HMDChoice.Oculus:
+                TriggerCurrentState = OVRInput.Get(OVRInput.Button.PrimaryHandTrigger, controller);
+
+                break;
+            case HMDChoice.Vive:
+                //vive part
+                SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("TrigPull");
+                TriggerCurrentState = pulltriggeraction.GetState(handPose.inputSource);
+                break;
+
+        }
+
+        print(TriggerCurrentState + " on " + controller.ToString());
+    }
+
+    private void FixedUpdate()
+    {        
+
+        if(TriggerCurrentState)
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
         {
             isTriggered = true;
 
@@ -129,4 +175,20 @@ public class FlyingMotionPerHand : MonoBehaviour
         lastControllerPositionLocal = transform.localPosition;
 
     }
+<<<<<<< HEAD
 }
+=======
+
+    private void OnEnable()
+    {
+        if (handPose == null)
+            handPose = GetComponent<SteamVR_Behaviour_Pose>();
+    }
+
+    private void OnDisable()
+    { 
+    }
+
+ 
+}
+>>>>>>> cd35ccc9e2438af5da16d4a4d56843491a64027e
