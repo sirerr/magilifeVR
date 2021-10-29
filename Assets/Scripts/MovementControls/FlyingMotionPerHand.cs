@@ -1,22 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Valve.VR.InteractionSystem;
-using Valve.VR;
+//using Valve.VR.InteractionSystem;
+//using Valve.VR;
+
+
 
 
 public class FlyingMotionPerHand : MonoBehaviour
 {
+    
+    public enum HMDChoice { Oculus, Vive };
+    public HMDChoice CurrentHMD;
 
-  public  float forceMult = 1;
-  public float torqueMult = 1;
+    //the Vive parts
+    //SteamVR_Behaviour_Pose handPose;
+    bool TriggerCurrentState = false;
+    //oculus
+    public OVRInput.Controller controller;
+
+    public float forceMult = 1;
+    public float torqueMult = 1;
 
     public Transform centerOfMass;
     public Rigidbody playArea;
-
-    public SteamVR_Action_Single CurrentTriggerValue;
-    public Hand thisHand;
-    public SteamVR_Behaviour_Pose handPose;
 
     // From Old System
     public bool secondInputPressed = false;
@@ -27,7 +34,7 @@ public class FlyingMotionPerHand : MonoBehaviour
     public bool isSwimming = false;
     [HideInInspector]
     public bool isTriggered = false;
-    
+
     private Vector3 controllerForce;
     private Vector3 controllerDistance;
     private Vector3 controllerTorque;
@@ -35,14 +42,47 @@ public class FlyingMotionPerHand : MonoBehaviour
     private Vector3 lastControllerPositionGolbal;
     private Vector3 lastControllerPositionLocal;
 
-    //
+    private void Awake()
+    {
+#if UNITY_ANDROID
+        CurrentHMD = HMDChoice.Oculus;
+  
+#else
+        CurrentHMD = HMDChoice.Vive;
+     //   if (handPose == null)
+       //     handPose = GetComponent<SteamVR_Behaviour_Pose>();
+#endif
+
+
+    }
+
+    public void FlightControls()
+    {
+
+    }
+
+    public void Update()
+    {
+        switch (CurrentHMD)
+        {
+            case HMDChoice.Oculus:
+                TriggerCurrentState = OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, controller);
+                //print(TriggerCurrentState + "hit");
+                break;
+            case HMDChoice.Vive:
+                //vive part
+            //    SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("TrigPull");
+             //   TriggerCurrentState = pulltriggeraction.GetState(handPose.inputSource);
+                break;
+
+        }
+
+    }
 
     private void FixedUpdate()
     {
-        SteamVR_Action_Boolean pulltriggeraction = SteamVR_Input.GetBooleanAction("TrigPull");
-        bool trigstate = pulltriggeraction.GetState(handPose.inputSource);
 
-        if(trigstate)
+        if (TriggerCurrentState)
         {
             isTriggered = true;
 
@@ -50,8 +90,8 @@ public class FlyingMotionPerHand : MonoBehaviour
             {
 
                 isSwimming = true;
-                
-                
+
+
                 Vector3 globalVelocity = (transform.position - lastControllerPositionGolbal) / Time.fixedDeltaTime;
                 Vector3 localVelocity = (transform.localPosition - lastControllerPositionLocal) / Time.fixedDeltaTime;
 
@@ -67,7 +107,7 @@ public class FlyingMotionPerHand : MonoBehaviour
 
                 controllerForce = globalVelocity * finalSpeed * -forceMult;
                 controllerDistance = transform.position - centerOfMass.position;
-              
+
 
                 playArea.AddForce(controllerForce);
                 //playArea.AddTorque (controllerTorque);
@@ -89,30 +129,4 @@ public class FlyingMotionPerHand : MonoBehaviour
         lastControllerPositionLocal = transform.localPosition;
 
     }
-
-    private void OnEnable()
-    {
-        if (handPose == null)
-            handPose = GetComponent<SteamVR_Behaviour_Pose>();
-
-        //    if (thisHand == null)
-        //        thisHand = this.GetComponent<Hand>();
-
-        //    CurrentTriggerValue.AddOnChangeListener(FlightChosing, thisHand.handType);
-        //
-    }
-
-    private void OnDisable()
-    {
-        //if (CurrentTriggerValue != null)
-        //    CurrentTriggerValue.RemoveOnChangeListener(FlightChosing, thisHand.handType);
-    }
-
-    //public void FlightChosing(ISteamVR_Action_Single action_In, SteamVR_Input_Sources inputsource, float newvalue, float newdelta )
-    //{
-    //    if(CurrentTriggerValue.GetChanged(thisHand.handType))
-    //    {
-
-    //    }
-    //}
 }
