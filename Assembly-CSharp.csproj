@@ -62,6 +62,7 @@
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Car\Scripts\CarSelfRighting.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Car\Scripts\Mudguard.cs" />
     <Compile Include="Assets\SteamVR_Input\SteamVR_Input_ActionSets.cs" />
+    <Compile Include="Assets\Scripts\playAreaDev\shoulderHelpers.cs" />
     <Compile Include="Assets\Imports\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\DynamicShadowSettings.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSettings.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughProjectionSurface.cs" />
     <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\GazeTarget.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerDisplay.cs" />
     <Compile Include="Assets\Imports\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
@@ -175,6 +177,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\AppDeeplink\UI\CustomDebugUI.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\ButtonDownListener.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\ColorChanger.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
     <Compile Include="Assets\Imports\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\FPSCounter.cs" />
@@ -194,10 +197,12 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\WindmillController.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\SimpleMouseRotator.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SPPquad.cs" />
+    <Compile Include="Assets\Scripts\playAreaDev\CreateBall.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\LaserPointer.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransition.cs" />
     <Compile Include="Assets\Imports\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarSDKCAPI.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\WitActivation.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\SelectionCylinder.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\PanelHMDFollower.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
@@ -208,8 +213,9 @@
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Car\Scripts\CarController.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\SmoothFollow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\BrushController.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\ButtonTriggerZone.cs" />
-    <Compile Include="Assets\Scripts\Prototype\CreateWall0.cs" />
+    <Compile Include="Assets\Scripts\playAreaDev\CreateWall0.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\AnalyticsUI.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneUserControl2Axis.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\BoneCapsuleTriggerLogic.cs" />
@@ -253,13 +259,14 @@
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarRemoteDriver.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarHand.cs" />
-    <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
     <Compile Include="Assets\Scripts\Painting\WorldPainter.cs" />
+    <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerTouch.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\FollowTarget.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneAiControl.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\VoipManager.cs" />
     <Compile Include="Assets\Imports\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\Instructions.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\ForcedReset.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
     <Compile Include="Assets\Imports\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
@@ -269,7 +276,7 @@
     <Compile Include="Assets\Imports\Standard Assets\Utility\ObjectResetter.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableToolView.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
-    <Compile Include="Assets\Scripts\Prototype\CreateSpot.cs" />
+    <Compile Include="Assets\Scripts\playAreaDev\CreateSpot.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsInputRouter.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\AlphaButtonClickMask.cs" />
@@ -278,6 +285,7 @@
     <Compile Include="Assets\Imports\Standard Assets\Utility\FOVKick.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionTeleport.cs" />
     <Compile Include="Assets\Imports\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\InteractionHandler.cs" />
     <Compile Include="Assets\Imports\Standard Assets\2D\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Scripts\OVROverlayCanvas.cs" />
     <Compile Include="Assets\Imports\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
@@ -289,9 +297,9 @@
     <Compile Include="Assets\Scripts\MovementControls\FlyingMotionPerHand.cs" />
     <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\RayToolView.cs" />
-    <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
     <Compile Include="Assets\Oculus\Avatar\Samples\AvatarGallery\Scripts\OvrAvatarTestDriver.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
     <Compile Include="Assets\Oculus\Avatar\Scripts\OvrAvatarDriver.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrainCarBase.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\ActivateTrigger.cs" />
@@ -314,12 +322,7 @@
     <Compile Include="Assets\Oculus\Avatar\Samples\SocialStarter\Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\TrackSegment.cs" />
     <Compile Include="Assets\Scripts\MovementControls\SwimPaddle.cs" />
-    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\WitActivation.cs" />
-    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\InteractionHandler.cs" />
-    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerDisplay.cs" />
-    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\ColorChanger.cs" />
-    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\BuiltinDemo\TimerController.cs" />
-    <Compile Include="Assets\Oculus\Voice\Demo\Scripts\UIShapesDemo\Instructions.cs" />
+    <Compile Include="Assets\Scripts\playAreaDev\HandWallInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\XingLightShader.shader" />
@@ -624,14 +627,14 @@
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>Assets\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.3.5\Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\2020.3.13f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -987,9 +990,6 @@
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Searcher.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
     </Reference>
@@ -1011,9 +1011,6 @@
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>Library\ScriptAssemblies\Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
@@ -1026,17 +1023,11 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Monetization">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Monetization.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.XR.Oculus.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -1070,9 +1061,6 @@
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>Library\ScriptAssemblies\com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.OpenVR.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
@@ -1113,13 +1101,17 @@
       <Project>{A566DC2A-7553-5761-A58D-54B8881E8C5F}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="AssistantCoreSDKEditor.csproj">
+      <Project>{BDB76415-5014-02BC-F197-84CC71C9B449}</Project>
+      <Name>AssistantCoreSDKEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.csproj">
       <Project>{B261E217-263E-106D-95A1-D52669C2E52B}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{5F5D6686-83C0-8BC4-1BAA-E9BEC198AB5A}</Project>
-      <Name>Oculus.Platform</Name>
+    <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
+      <Project>{CB4336BB-3FAD-3F25-D388-138525F744D2}</Project>
+      <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{C5AC4C06-BC18-E6F8-C63A-FFAF5AA3BC78}</Project>
@@ -1128,6 +1120,10 @@
     <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
       <Project>{E3652C66-5090-0F96-52B3-215EF2B0FED3}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.WitAI.csproj">
+      <Project>{D2E2562A-7B59-4218-556E-208D49E5F761}</Project>
+      <Name>Facebook.WitAI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.Examples.csproj">
       <Project>{E61FEB83-F4A2-330D-185C-30FA9B63FFBF}</Project>
@@ -1169,9 +1165,13 @@
       <Project>{D8A522F4-0832-2D7F-E756-E50F8D23F4F7}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{23E20079-8014-9199-1E1B-631CDAFF49A3}</Project>
-      <Name>Oculus.Platform.Editor</Name>
+    <ProjectReference Include="VoiceSDK.Editor.csproj">
+      <Project>{19311A66-7F91-BFAE-8D6D-FAF6E11D3E9B}</Project>
+      <Name>VoiceSDK.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Editor.csproj">
+      <Project>{516508C1-DBD5-21F2-7FEA-EEEAA74794E2}</Project>
+      <Name>Facebook.Wit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
       <Project>{4BCF5918-403F-5D34-F925-668E57C62445}</Project>
@@ -1181,29 +1181,17 @@
       <Project>{1955947C-DD0B-A35B-1C3E-23E7B523C7E6}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
-    <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{BDB76415-5014-02BC-F197-84CC71C9B449}</Project>
-      <Name>AssistantCoreSDKEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{CB4336BB-3FAD-3F25-D388-138525F744D2}</Project>
-      <Name>AssistantCoreSDKRuntime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Facebook.WitAI.csproj">
-      <Project>{D2E2562A-7B59-4218-556E-208D49E5F761}</Project>
-      <Name>Facebook.WitAI</Name>
-    </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{19311A66-7F91-BFAE-8D6D-FAF6E11D3E9B}</Project>
-      <Name>VoiceSDK.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Editor.csproj">
-      <Project>{516508C1-DBD5-21F2-7FEA-EEEAA74794E2}</Project>
-      <Name>Facebook.Wit.Editor</Name>
+    <ProjectReference Include="Oculus.Platform.csproj">
+      <Project>{5F5D6686-83C0-8BC4-1BAA-E9BEC198AB5A}</Project>
+      <Name>Oculus.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
       <Project>{6DA7C111-2AE0-7EEC-414D-5BC5D6CC4DF0}</Project>
       <Name>VoiceSDK.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Platform.Editor.csproj">
+      <Project>{23E20079-8014-9199-1E1B-631CDAFF49A3}</Project>
+      <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
