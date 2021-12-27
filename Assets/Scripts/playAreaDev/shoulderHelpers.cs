@@ -10,6 +10,7 @@ public class shoulderHelpers : MonoBehaviour
     Vector3 leftPos;
     Vector3 rightPos;
     public GameObject points;
+    public Transform forwardWall;
 
     // Start is called before the first frame update
     void Awake()
@@ -17,7 +18,8 @@ public class shoulderHelpers : MonoBehaviour
         
         leftShoulder = Instantiate(points);
         rightShoulder  = Instantiate(points);
-   
+        leftShoulder.transform.parent = forwardWall;
+        rightShoulder.transform.parent = forwardWall;
     }
 
     // Update is called once per frame

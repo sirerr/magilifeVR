@@ -45,8 +45,9 @@ public class CreateWall0 : MonoBehaviour
         vec3.z += DistanceFromWall;
 
         HandWallInteraction wallInteract = col.GetComponent<HandWallInteraction>();
-        GameObject obj = Instantiate(makeObj, vec3, col.transform.rotation);
-        obj.GetComponent<CreateBall>().direction = wallInteract.Direction;
+        Quaternion rot = Quaternion.LookRotation(wallInteract.Direction);
+        GameObject obj = Instantiate(makeObj, vec3, rot);
+      //  obj.GetComponent<CreateBall>().direction = wallInteract.Direction;
 
     }
 }

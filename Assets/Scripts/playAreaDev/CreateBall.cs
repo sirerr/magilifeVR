@@ -17,12 +17,17 @@ public class CreateBall : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rbody.AddForce(transform.forward *   speed,ForceMode.Force);
+        rbody.AddForce(transform.forward * speed,ForceMode.Force);
     }
 
     IEnumerator Life()
     {
         yield return new WaitForSeconds(LifeTime);
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
         Destroy(gameObject);
     }
 }
